@@ -273,3 +273,19 @@ footer {
   font-size: 24px;
   cursor: pointer;
 }
+#login-form{
+  background-color: transparent; 
+  color:#848080;
+  border: none; 
+  border-radius: 0; 
+  padding-top: 2px;
+  font-size: 16px; 
+}
+#logout-form{
+  background-color: transparent; 
+  color:#848080;
+  border: none; 
+  border-radius: 0; 
+  padding-top: 2px;
+  font-size: 16px; 
+}
