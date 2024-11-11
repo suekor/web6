@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery - NNN Sandwiches</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header id="header-section">
+      <h1 class="section-heading">Delivery Information</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">NNN Sandwiches</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav-home" tabindex="0">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="nav-contact" tabindex="0">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav-menu" tabindex="0">Menu</a>
+          </li>
+          <button class="nav-link" id="theme-switch" tabindex="0">Switch Theme</button>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="delivery-info" class="my-4">
+      <h2 class="section-heading">Delivery Options</h2>
+      <p class="paragraph-text">
+        We offer delivery within Astana. Your sandwiches will be delivered
+        fresh to your doorstep!
+      </p>
+
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/011/894/710/non_2x/delivery-truck-icon-clipart-in-animated-caartoon-illustration-vector.jpg"
+        alt="Delivery Truck"
+        class="img-fluid mb-4"
+      />
+
+      <h3 class="section-subheading">Delivery Times</h3>
+      <ul>
+        <li>Weekdays: 10 AM - 8 PM</li>
+        <li>Weekends: 11 AM - 9 PM</li>
+        
+      </ul>
+      <h3 class="section-subheading">Delivery Areas</h3>
+      <p>We deliver to the following areas:</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-3">
+          <h5>City Center</h5>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <h5>North Side</h5>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <h5>South Side</h5>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="footer-section">
+    <p class="paragraph-text">
+      Created by Nurbapa Nurdaulet, 7th September 2024
+    </p>
+    <p class="paragraph-text">
+      Contact us at:
+      <a href="mailto:230048@astanait.edu.kz">230048@astanait.edu.kz</a>
+      or
+    </p>
+    <section id="contact" class="my-4">
+      <button id="popup-button">Contact Us</button>
+      <div id="popup-form" class="hidden">
+        <form id="contact-form" action="/submit" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" id="email" name="email"  />
+          </div>
+          <div class="form-group">
+            <label for="sandwich">Favorite Sandwich:</label>
+            <select class="form-control" id="sandwich" name="sandwich">
+              <option value="tuna">Classic tuna with avocado</option>
+              <option value="turkey">Turkey with greens</option>
+              <option value="chicken">Grilled Chicken</option>
+            </select>
+          </div>
+          <div id="error-message" class="text-danger"></div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-secondary" type="button" id="reset-button">Reset</button>
+        </form>
+        <button id="close-button">Close</button>
+      </div>
+      <button id="getUserBtn">Our business partners</button>
+
+      <div id="user-container"></div>
+  
+    </section>
+  </footer>
+
+        <div id="greeting-modal" class="modal">
+          <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <p id="greeting"></p> 
+          </div>
+        </div>
+  <script src="secondaryScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+   
